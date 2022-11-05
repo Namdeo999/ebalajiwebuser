@@ -38,17 +38,7 @@
 <div class="row">
 <div class="col-lg-12 ">
 <div class="form-group">
-<input type="text" class="form-control" required data-error="Please enter your Username" placeholder="Enter Your Username">
-</div>
-</div>
-<div class="col-lg-12 ">
-<div class="form-group">
-<input type="email" class="form-control" required data-error="Please enter your Username or Email" placeholder="Enter Your Email">
-</div>
-</div>
-<div class="col-12">
-<div class="form-group">
-<input class="form-control" type="password" name="password" placeholder="Password">
+<input type="text" class="form-control" required data-error="Please enter your Mobile No" placeholder="Enter Your Mobile No">
 </div>
 </div>
 <div class="col-lg-12 ">
