@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\DashboardController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,5 +30,12 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+// Route::get('/', $controller_path . '\dashboard\Analytics@index')->name('dashboard-analytics');
+
 
 
