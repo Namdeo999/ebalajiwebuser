@@ -44,13 +44,13 @@
     
 <div class="navbar-area">
     <div class="mobile-nav">
-        <a href="index.html" class="logo"><img src="{{asset('public/assets/images/logos/')}}" alt="Logo"></a>
+        <a href="index.html" class="logo"><img src="{{asset('public/assets/images/logo-1.png')}}" alt="Logo"></a>
     </div>
     <div class="main-nav">
         <div class="container-fluid">
             <div class="container-max">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('public/assets/images/logos/intoloindia5.png')}}" alt="Logo"></a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('public/assets/images/logo-1.png')}}" alt="Logo"></a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
@@ -72,14 +72,6 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="{{url('/services')}}" class="nav-link">Services</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    {{-- <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
-                                </ul>
-                            </li>
-                            <li class="nav-item">
                                 <a href="{{url('/contact')}}" class="nav-link">Contact Us</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     {{-- <li><a class="dropdown-item" href="#">Action</a></li>
@@ -92,7 +84,7 @@
                         <div class="nav-side d-display nav-side-mt">
                             <div class="nav-side-item">
                                 <div class="get-btn">
-                                    <a href="{{url('/aboutus')}}" class="default-btn btn-bg-two border-radius-50">Login<i class='bi bi-chevron-right'></i></a>
+                                    <a href="{{url('/login')}}" class="default-btn btn-bg-two border-radius-50">Login<i class='bi bi-chevron-right'></i></a>
                                 </div>
                             </div>
                         </div>
