@@ -34,7 +34,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index']);
 // Route::get('/', $controller_path . '\dashboard\Analytics@index')->name('dashboard-analytics');
 
 

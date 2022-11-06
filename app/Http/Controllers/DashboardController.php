@@ -13,6 +13,7 @@ class DashboardController extends Controller
         // echo "<pre>";
         // print_r($project_img['project_prestigious_img']);
         // dd();
-        return view('content.dashboard.dashboards-analytics');   
+        // return view('content.dashboard.dashboards-analytics');   
+        return view('dashboard');   
     }
 }

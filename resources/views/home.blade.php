@@ -3,7 +3,6 @@
 
 @section('content')
 
-<<<<<<< HEAD
 <div class="banner-five-area">
     <div class="container-fluid">
         <div class="row align-items-center">
@@ -461,8 +460,4 @@ Ut malesuada urna et ultrices efficitur. Nulla turpis dui, rhoncus sed erat quis
 </div>
 </div>
 
-=======
-    <h1>Home Page Content Here</h1>
-    
->>>>>>> fec3bb7 (update theme)
 @endsection
