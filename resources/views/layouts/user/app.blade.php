@@ -16,6 +16,14 @@
         <link rel="stylesheet" href="{{ asset('assets/user/css/OverlayScrollbars.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/user/css/daterangepicker.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/user/css/summernote-bs4.min.css') }}" />
+        <style>
+            .sidebar .nav-link p{
+                color:black;
+            }
+            .nav-sidebar>.nav-item .nav-icon {
+                color:black;
+            }
+        </style>
     </head>
     <body class="hold-transition sidebar-mini layout-fixed">
         <div class="wrapper">

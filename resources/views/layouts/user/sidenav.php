@@ -28,7 +28,15 @@
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
-                <!-- <i class="right fas fa-angle-left"></i> -->
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item menu-open">
+            <a href="/dashboard2" class="nav-link ">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard 2
               </p>
             </a>
             
