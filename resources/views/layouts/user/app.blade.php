@@ -32,16 +32,16 @@
     <body class="hold-transition sidebar-mini layout-fixed">
         <div class="wrapper">
 
-            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light fixed-top">
                 @include('layouts.user.header')
             </nav>
             <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background: #f4f6f9; ">
                 @include('layouts.user.sidenav')
             </aside>
 
-            <div class="container-fluid">
+            <div class="container-fluid pt-5">
                 <div class="content-wrapper">
-                    <section class="content">
+                    <section class="content ">
                         @yield('style')
                         @yield('content')
                         @yield('script')
@@ -53,11 +53,11 @@
                 @include('layouts.user.sidesetting')
             </aside>
 
-            <footer class="main-footer">
-                <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+            <footer class="main-footer fixed-bottom" style="padding: 5px;">
+                <strong>Copyright &copy; 2021-2022 <a href="https://ebalajipay.com">Ebajaji Services</a>.</strong>
                 All rights reserved.
-                <div class="float-right d-none d-sm-inline-block">
-                  <b>Version</b> 3.2.0
+                <div class="float-right d-none d-sm-inline-block ">
+                  <b>Version</b> 1.1
                 </div>
             </footer>
 
