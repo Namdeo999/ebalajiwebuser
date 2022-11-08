@@ -1,122 +1,207 @@
 @extends('layouts.web.app')
 @section('page_title', 'Ebala Ji Services')
 
+
 @section('content')
+
+<style>
+
+.con{
+	width: 360px;
+	height: 400px;
+	margin: 8% auto;
+	background:#fff;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+h3{
+	text-align: center;
+	margin-bottom: 40px;
+	color: #777;
+}
+
+.con form{
+	width: 280px;
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	transition: 0.5s;
+}
+
+form input{
+	width: 100%;
+	padding: 10px 5px;
+	margin: 5px 0;
+	border :0;
+	background: transparent; 
+}
+
+.btn-box{
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+form button{
+	width: 110px;
+	height: 35px;
+	margin: 0 10px;
+	background: linear-gradient(to right, #ff105f,#ffad06);
+	border-radius:30px;
+	border:0;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+#Form2{
+	left: 450px;
+}
+
+#Form3{
+	left: 450px;
+}
+
+.step-row{
+	width: 360px;
+	height: 40px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 -1px 5px -1px #000;
+	position: absolute;
+}
+
+.step-col{
+	width: 120px;
+	text-align: center;
+	color: #333;
+	position: relative;
+}
+
+#progress{
+	position: absolute;
+	height: 100%;
+	width: 120px;
+	background: linear-gradient(to right, #ff105f,#ffad06);
+	transition: 1s;
+}
+
+#progress::after{
+	content: '';
+	height: 0;
+	width: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	border-left: 20px solid #ffad06;
+}
+</style>
+
+
 <div class="inner-banner">
-<div class="container">
-<div class="inner-title text-center">
-<h3>Register</h3>
-<ul>
-<li>
-<a href="index.html">Home</a>
-</li>
-<li>
-<i class='bx bx-chevrons-right'></i>
-</li>
-<li>Register</li>
-</ul>
-</div>
-</div>
-<div class="inner-shape">
-<img src="assets/images/shape/inner-shape.png" alt="Images">
-</div>
-</div>
-
-
-
-<div class="user-area pt-100 pb-70">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="user-img">
-                    <img src="assets/images/user-img.jpg" alt="Images">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="user-form">
-                    <div class="contact-form">
-                    <div style="margin-bottom: 30px;">
-                    <div class="container shadow py-5">
-                        <div class="container network_wrapper col-sm p-2 ">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5 class="card-title">User Registration</h5>
-                                        <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#mobile">Mobile</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" aria-current="true" data-bs-toggle="tab" href="#otp">Otp Verify</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" aria-current="true" data-bs-toggle="tab" href="#user_info">User Info</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-bs-toggle="tab" href="#payment">Payment</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <form class="card-body tab-content">
-                                        <div class="tab-pane active py-4" id="mobile">
-                                        <div class="row">
-                                            <div class="col-lg-12 ">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" required data-error="Please enter your Mobile No" placeholder="Enter Your Mobile No">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 ">
-                                                <button type="submit" class="default-btn btn-bg-two">Submit</button>
-                                            </div>
-                                            <div class="col-12">
-                                                <p class="account-desc">Already have an account?<a href="log-in.html">Log In</a></p>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <div class="tab-pane" id="otp">
-                                        <div class="row">
-                                            <div class="col-lg-12 ">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" required data-error="Enter otp" placeholder="Enter Otp">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 ">
-                                                <button type="submit" class="default-btn btn-bg-two">Submit</button>
-                                            </div>
-                                            
-                                        </div>
-                                        </div>
-                                        <div class="tab-pane" id="user_info">
-                                            <p class="card-text">user info</p>
-                                        </div>
-                                        <div class="tab-pane" id="payment">
-                                            <p class=" card-text">payment</p>
-                                        </div>
-                    
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <!-- <h2>Register Now</h2>
-                            <form>
-                                <div class="row">
-                                    <div class="col-lg-12 ">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" required data-error="Please enter your Mobile No" placeholder="Enter Your Mobile No">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 ">
-                                        <button type="submit" class="default-btn btn-bg-two">Register Now</button>
-                                    </div>
-                                    <div class="col-12">
-                                        <p class="account-desc">Already have an account?<a href="log-in.html">Log In</a></p>
-                                    </div>
-                                </div>
-                            </form> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="inner-title text-center">
+            <h3>Register</h3>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <i class='bx bx-chevrons-right'></i>
+                </li>
+                <li>Register</li>
+            </ul>
         </div>
     </div>
+    <div class="inner-shape">
+        <img src="assets/images/shape/inner-shape.png" alt="Images">
+    </div>
+</div>
+
+<div class="con">
+	<form id="Form1">
+		<h3>Mobile Number</h3>
+		<input type="text" placeholder="mobile" required>
+		<input type="text" placeholder="mobile" required>
+		<input type="text" placeholder="mobile" required>
+		<div class="btn-box">
+			<button type="button" id="Next1">Next</button>
+		</div>
+	</form>
+
+    <form id="Form2">
+        <h3>Otp Verification</h3>
+        <input type="text" placeholder="otp" required>
+        <input type="text" placeholder="mobile" required>
+        <input type="text" placeholder="mobile" required>
+
+        <div class="btn-box">
+            <button type="button" id="Back1">Back</button>
+            <button type="button" id="Next2">Next</button>
+        </div>
+    </form>
+
+    <form id="Form3">
+        <h3>User Info</h3>
+        <input type="text" placeholder="vle id" required>
+        <input type="text" placeholder="mobile" required>
+        <input type="text" placeholder="mobile" required>
+
+        <div class="btn-box">
+            <button type="button" id="Back2">Back</button>
+            <button type="Submit">Submit</button>
+        </div>
+    </form>
+
+    <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>step 1</small></div>
+        <div class="step-col"><small>step 2</small></div>
+        <div class="step-col"><small>step 3</small></div>
+    </div>
+</div>
+
+    <script>
+		var Form1 = document.getElementById('Form1');
+		var Form2 = document.getElementById('Form2');
+		var Form3 = document.getElementById('Form3');
+
+		var Next1 = document.getElementById('Next1');
+		var Next2 = document.getElementById('Next2');
+		var Back1 = document.getElementById('Back1');
+		var Back2 = document.getElementById('Back2');
+
+		var progress = document.getElementById('progress');
+
+
+		Next1.onclick = function(){
+			Form1.style.left = "-450px";
+			Form2.style.left = "40px";
+			progress.style.width = "240px";
+		}
+
+		Back1.onclick = function(){
+			Form1.style.left = "40px";
+			Form2.style.left = "450px";
+			progress.style.width = "120px";
+		}
+
+		Next2.onclick = function(){
+			Form2.style.left = "-450px";
+			Form3.style.left = "40px";
+			progress.style.width = "360px";
+		}
+
+		Back2.onclick = function(){
+			Form2.style.left = "40px";
+			Form3.style.left = "450px";
+			progress.style.width = "240px";
+		}
+	</script>
+
 @endsection
