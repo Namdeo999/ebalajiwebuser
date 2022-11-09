@@ -25,26 +25,27 @@
 </div>
 
 
-<div class="container  pt-100 pb-70">
-    <div class="card text-center">
+<div class="container pt-100 pb-70">
+    <div class="card">
         <div class="card-header">
-            <h4 class="card-title"> User Registeration</h4>
+            <h4 class="card-title text-center"> User Registeration</h4>
         </div>
         <div class="card-body">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#mob">Mobile</a>
+                    <a class="nav-link active" data-bs-toggle="tab" href="#mob"><h6>Mobile</h6></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#otp">Otp Verification</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#otp"><h6>Otp Verification</h6> </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#user">User Info</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#user"><h6>User Info</h6> </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#pay">Payment</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#pay"><h6>Payment</h6> </a>
                 </li>
             </ul> 
+
             <div class="tab-content">
                 <div class="tab-pane container active pt-50 pb-50" id="mob">
                     <div class="user-area">
@@ -78,7 +79,7 @@
                         </div>
                     </div>   
                 </div>
-                <div class="tab-pane container active pt-50 pb-50" id="otp">
+                <div class="tab-pane container pt-50 pb-50" id="otp">
                     <div class="user-area">
                         <div class="container">
                             <div class="row align-items-center">
@@ -110,8 +111,106 @@
                         </div>
                     </div>   
                 </div>
-                <div class="tab-pane container fade" id="user">This is a user info tab.</div>
-                <div class="tab-pane container fade" id="pay">This is a payment tab.</div>
+
+                <div class="tab-pane container pt-50 pb-50" id="user">
+                    <div class="user-area">
+                        <div class="container">
+                            <div class="row">
+                              <div class="col-12">
+                                  <div class="user-form">
+                                      <div class="contact-form">
+                                      <h2>User Information</h2>
+                                            <form>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Services</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Service Fees">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Vle Id">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Vle Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Contact Person">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Pan No.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Pin Code">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Country</option>
+                                                        <option value="1">India</option>
+                                                        <option value="2">Singapore</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>State</option>
+                                                        <option value="1">madhya pradesh</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>City</option>
+                                                        <option value="1">Jabalpur</option>
+                                                        <option value="2">Indore</option>
+                                                        <option value="3">Pune</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-12 ">
+                                                        <button type="submit" class="default-btn btn-bg-two">Submit</button>
+                                                </div>
+                                            </div>
+                                            </form>
+                                      </div>
+                                  </div>
+                              </div>  
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="tab-pane container pt-50 pb-50" id="pay">
+                    <div class="user-area">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <h4 class="mb-5">Total Payble Amount - 100000</h5>
+                                <div class="col-lg-12 ">
+                                    <button type="submit" class="default-btn btn-bg-two">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>                
             </div>
         </div>
     </div>
