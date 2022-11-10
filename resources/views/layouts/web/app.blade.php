@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
         
         <link rel="stylesheet" href="{{ asset('assets/web/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/web/css/bootstrap-icons.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/web/css/animate.min.css') }}">
+
         {{-- <link rel="stylesheet" href="{{asset('public/assets/fonts/flaticon.css')}}"> --}}
         {{-- <link rel="stylesheet" href="{{asset('public/assets/css/boxicons.min.css')}}"> --}}
+
         <link rel="stylesheet" href="{{ asset('assets/web/css/owl.carousel.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/web/css/owl.theme.default.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/web/css/magnific-popup.css') }}">
@@ -19,6 +20,7 @@
         <link rel="stylesheet" href="{{ asset('assets/web/css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/web/css/custom-style.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/web/css/responsive.css') }}">
+
         <link rel="icon" type="image/png" href="{{asset('assets/images/favicon.png') }}">
         <title>Ebalaji Services</title>
 
@@ -32,6 +34,9 @@
             body {
                 font-family: 'Nunito', sans-serif;
                 background-color: #f3f5f8;
+            }
+            .nav-link{
+                padding: 5px;
             }
         </style>
     </head>
@@ -56,7 +61,7 @@
         <script src="{{asset('assets/web/js/jquery.ajaxchimp.min.js')}}"></script>
         <script src="{{asset('assets/web/js/form-validator.min.js')}}"></script>
         <script src="{{asset('assets/web/js/contact-form-script.js')}}"></script>
-        <script src="{{asset('assets/web/js/custom.js')}}"></script>
+        {{-- <script src="{{asset('assets/web/js/custom.js')}}"></script> --}}
     </body>
 
    

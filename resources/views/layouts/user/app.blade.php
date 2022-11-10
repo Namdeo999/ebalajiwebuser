@@ -39,7 +39,7 @@
                 @include('layouts.user.sidenav')
             </aside>
 
-            <div class="container-fluid pt-5">
+            <div class="container-fluid pt-5 pb-4">
                 <div class="content-wrapper">
                     <section class="content ">
                         @yield('style')
