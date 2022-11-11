@@ -26,16 +26,11 @@ class DashboardController extends Controller
 
         $url = config('app.api_url').'country/';
         $countries = Http ::get($url);
-        //return $countries;
 
-        
-        
         // return view('projects.apiwithkey', compact('responseBody'));
-
-        
         // return view('content.dashboard.dashboards-analytics');   
         return view('dashboard2', [
-            'data'=>$countries
+            'countries'=>$countries['data']
         ]);   
     }
 
