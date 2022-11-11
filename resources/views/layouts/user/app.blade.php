@@ -8,6 +8,7 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
         <!-- Font Awesome -->
+        <link rel="stylesheet" href="{{ asset('assets/user/css/bootstrap.min.css') }}" />//
         <link rel="stylesheet" href="{{ asset('assets/user/css/fontawesome-free/css/all.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/user/css/tempusdominus-bootstrap-4.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/user/css/icheck-bootstrap.min.css') }}" />
@@ -19,6 +20,8 @@
 
         {{-- <link rel="stylesheet" href="{{ asset('assets/common/css/core.css') }}" /> --}}
         {{-- <link rel="stylesheet" href="{{ asset('assets/common/css/theme-default.css') }}" /> --}}
+
+        <script src="{{ asset('assets/user/js/jquery.min.js') }}"></script>
 
         <style>
             .sidebar .nav-link p{
@@ -63,7 +66,6 @@
 
         </div>
     </body>
-    <script src="{{ asset('assets/user/js/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/user/js/jquery-ui.min.js') }}"></script>
     <script>
         $.widget.bridge('uibutton', $.ui.button)
@@ -80,6 +82,5 @@
     <script src="{{ asset('assets/user/js/summernote-bs4.min.js') }}"></script>
     <script src="{{ asset('assets/user/js/jquery.overlayScrollbars.min.js') }}"></script>
     <script src="{{ asset('assets/user/js/adminlte.js') }}"></script>
-    {{-- <script src="{{ asset('assets/user/js/demo.js') }}"></script> --}}
     <script src="{{ asset('assets/user/js/dashboard.js') }}"></script>
 </html>

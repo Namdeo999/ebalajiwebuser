@@ -18,7 +18,7 @@
       </div><!-- /.container-fluid -->
     </div> --}}
 
-    
+    <!-- Button trigger modal -->
 
     <div class="row pt-3">
         <div class="col-lg-3 col-6">
@@ -428,6 +428,12 @@
 @endsection 
 
 @section('script')
+{{-- <script src="{{asset('public/sdpl-assets/user/js/slider.js')}}"></script> --}}
+  <script>
+    // $(document).ready(function () {
+    //   alert("hiii");
+    // });
+  </script>
 
 @endsection
  
