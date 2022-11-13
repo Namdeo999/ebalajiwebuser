@@ -25,7 +25,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
             <a href="/dashboard" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
               </p>
@@ -34,7 +34,7 @@
           </li>
           <li class="nav-item menu-open">
             <a href="/dashboard2" class="nav-link ">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard 2
               </p>
@@ -43,7 +43,7 @@
           </li>
         <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="nav-icon fas fa-th"></i>
               <p>
                 Create Partner
                 <i class="fas fa-angle-left right"></i>
@@ -87,13 +87,13 @@
           <li class="nav-header">Coupon</li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-ellipsis-h"></i>
+              <i class="nav-icon fas fa-th"></i>
               <p>P-Coupon </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
+              <i class="nav-icon fas fa-th"></i>
               <p>E-Coupon</p>
             </a>
           </li>
@@ -101,13 +101,13 @@
           <li class="nav-header">Account</li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-ellipsis-h"></i>
+              <i class="nav-icon fas fa-th"></i>
               <p>Bank A/C </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
+              <i class="nav-icon fas fa-th"></i>
               <p>Wallet</p>
             </a>
           </li>
