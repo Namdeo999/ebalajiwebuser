@@ -8,9 +8,8 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="banner-five-content">
-                    <span>TECHNOLOGY & IT SOLUTIONS</span>
-                    <h1>It Solutions , <b>Digital</b> Technology & Services All Around the World</h1>
-                    <p>Aenean Sollicitudin, Lorem quis cursus a auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit duis sed odio sit amet nibh.</p>
+                    <h1>Welcome to <b>Ebalaji</b> Pay Online Services.</h1>
+                    <p>Pay bills, recharge, send money, Purchase Gift Voucher, Book Flight, Book Hotel & Use Our Seamless etc. Cause if you do, it can be yours now. </p>
                     <a href="contact.html" class="default-btn btn-bg-two border-radius-50 ">Get A Quote</a>
                 </div>
             </div>
@@ -34,32 +33,32 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="work-process-card-three">
                     <div class="number-title">01.</div>
-                    <h3>Discovery</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                    <h3>Instant and easy onboarding</h3>
+                    {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p> --}}
                     <i class="flaticon-project"></i>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="work-process-card-three">
                     <div class="number-title">02.</div>
-                    <h3>Planning</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                    <h3> No working capital requirement</h3>
+                    {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p> --}}
                     <i class="flaticon-chip"></i>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="work-process-card-three">
                     <div class="number-title">03.</div>
-                    <h3>Execute</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                    <h3> Trusted systems, with industry best </h3>
+                    {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p> --}}
                     <i class="flaticon-effective"></i>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="work-process-card-three">
                     <div class="number-title">04.</div>
-                    <h3>Deliver</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                    <h3> Support your business at all times</h3>
+                    {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p> --}}
                     <i class="flaticon-bullhorn"></i>
                 </div>
             </div>
@@ -82,38 +81,13 @@
 <span class="sp-color2">About Us</span>
 <h2>Right Partner for Software Innovation</h2>
 <p>
-Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum auctor a ornare odio.
+    ONE PAYMENT GATWAY SYSTEM START KIYA GAYA HAI JISME AUTOMATIC COMMISSION MILENGA JYDA JANKARI KE LIYE CONTACT TO ADMIN Ebalajiservices India has been authorized to apply PAN CARD across India through our Super Distributor ,Distributor & retailer network. Retailer will able to make online application of New PAN Card and Correction / Duplicate. A great opportunity for Super Distributor& Distributor to authorized Retailers become agent for PAN Card Ebalajiservices is a technology based global platform founded by group of professionals to provide all services of Travel, Utility & Bill payments, Financial and E-Gov under one Tab. Ebalajiservices acts as the unified platform for all services related to the PAN card application and all other procedures, whatsoever. Permanent Account Number (PAN), the ten-digit number issued in the form of a laminated card by the Income Tax Department in India, counts as one of the most important document as the unique identification number allotted to each taxpayer of the country.
 </p>
 </div>
-<h3>We Have 22+ Years Of Experience. We Offer It Solutions , Digital Technology Service</h3>
 <div class="all-skill-bar">
- <div class="skill-bar" data-percentage="90%">
-<h4 class="progress-title-holder clearfix">
-<span class="progress-title">Analytics</span>
-<span class="progress-number-wrapper">
-<span class="progress-number-mark">
-<span class="percent"></span>
-</span>
-</span>
-</h4>
-<div class="progress-content-outter">
-<div class="progress-content"></div>
+ 
 </div>
-</div>
-<div class="skill-bar mb-0" data-percentage="80%">
-<h4 class="progress-title-holder clearfix">
-<span class="progress-title">Solutions</span>
-<span class="progress-number-wrapper">
-<span class="progress-number-mark">
-<span class="percent"></span>
-</span>
-</span>
-</h4>
-<div class="progress-content-outter">
-<div class="progress-content"></div>
-</div>
-</div>
+
 </div>
 </div>
 </div>

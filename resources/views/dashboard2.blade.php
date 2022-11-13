@@ -12,6 +12,10 @@
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active">Dashboard v1</li>
+              
+              @foreach ($countries as $item)
+                  {{$item['_id']}}
+              @endforeach
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

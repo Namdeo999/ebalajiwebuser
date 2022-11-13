@@ -58,6 +58,8 @@ return [
 
     'asset_url' => env('ASSET_URL'),
 
+    'api_url' => env('API_URL'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -211,6 +213,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'MyApp' => App\MyApp::class,
     ])->toArray(),
 
 ];

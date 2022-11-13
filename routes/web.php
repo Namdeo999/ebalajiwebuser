@@ -1,19 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\DashboardController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('home');
@@ -35,8 +24,7 @@ Route::get('/dashboard', function () {
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
-Route::get('/dashboard2', [DashboardController::class, 'index2']);
-// Route::get('/', $controller_path . '\dashboard\Analytics@index')->name('dashboard-analytics');
+Route::get('/register', [DashboardController::class, 'index2']);
 
-
+Route::post('register/register', [UserController::class, 'saveMobileNo']);
 

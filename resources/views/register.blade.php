@@ -60,15 +60,22 @@
                                     <div class="user-form">
                                         <div class="contact-form">
                                             <h2>Mobile Number</h2>
-                                            <form>
+                                            <form  id="mobileForm">
+                                            @csrf
                                                 <div class="row">
                                                     <div class="col-lg-12 ">
                                                         <div class="form-group">
-                                                            <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Enter mobile no.">
+                                                            <input name="mobile_no" id="mobile_no" type="text" class="form-control" required placeholder="Enter mobile no.">
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" type="checkbox" id="i_agree" name="i_agree">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                i agree
+                                                            </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 ">
-                                                        <button type="submit" class="default-btn btn-bg-two">Submit</button>
+                                                        <button type="submit" id="saveMobileBtn" class="default-btn btn-bg-two">Submit</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -167,9 +174,9 @@
                                                 </div>
                                                 <div class="col-4 mb-5">
                                                     <select class="form-select form-select-lg" aria-label="Default select example">
-                                                        <option selected>Country</option>
-                                                        <option value="1">India</option>
-                                                        <option value="2">Singapore</option>
+                                                        @foreach ($countries as $list)
+                                                            <option value="{{$list['_id']}}">{{ucfirst($list['country'])}}</option>
+                                                        @endforeach
                                                     </select>
                                                 </div>
                                                 <div class="col-4 mb-5">
@@ -215,5 +222,14 @@
         </div>
     </div>
 </div>
+
+<script>
+        $(document).ready(function () {
+            $(document).on('click','#saveMobileBtn', function (e) {
+                e.preventDefault();
+                saveMobileNo()
+            });
+        });
+    </script>
 
 @endsection
