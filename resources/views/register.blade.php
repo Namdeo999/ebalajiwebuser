@@ -2,9 +2,9 @@
 @section('page_title', 'Ebala Ji Services')
 
 
-@section('content')
+@section('content') 
 
-<div class="inner-banner">
+{{-- <div class="inner-banner">
     <div class="container">
         <div class="inner-title text-center">
             <h3>Register</h3>
@@ -22,7 +22,7 @@
     <div class="inner-shape">
         <img src="assets/images/shape/inner-shape.png" alt="Images">
     </div>
-</div>
+</div> --}}
 
 
 <div class="container pt-100 pb-70">
@@ -60,25 +60,25 @@
                                     <div class="user-form">
                                         <div class="contact-form">
                                             <h2>Mobile Number</h2>
-                                            <form  id="mobileForm">
+                                            <form >
                                             @csrf
                                                 <div class="row">
                                                     <div class="col-lg-12 ">
                                                         <div class="form-group">
-                                                            <input name="mobile_no" id="mobile_no" type="text" class="form-control" required placeholder="Enter mobile no.">
+                                                            <input name="mobile" id="mobile" type="text" class="form-control" required placeholder="Enter mobile no.">
                                                         </div>
                                                         <div class="form-check mb-3">
-                                                            <input class="form-check-input" type="checkbox" id="i_agree" name="i_agree">
+                                                            <input class="form-check-input" type="checkbox" id="i_agree" name="i_agree" value="true">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                 i agree
                                                             </label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-12 ">
-                                                        <button type="submit" id="saveMobileBtn" class="default-btn btn-bg-two">Submit</button>
-                                                    </div>
                                                 </div>
                                             </form>
+                                            <div class="col-lg-12 ">
+                                                <button id="saveMobileBtn" class="default-btn btn-bg-two">Submit</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -174,9 +174,7 @@
                                                 </div>
                                                 <div class="col-4 mb-5">
                                                     <select class="form-select form-select-lg" aria-label="Default select example">
-                                                        @foreach ($countries as $list)
-                                                            <option value="{{$list['_id']}}">{{ucfirst($list['country'])}}</option>
-                                                        @endforeach
+                                                        
                                                     </select>
                                                 </div>
                                                 <div class="col-4 mb-5">
@@ -221,25 +219,44 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
 
-<script>
-        $(document).ready(function () {
-            $(document).on('click','#saveMobileBtn', function (e) {
-                e.preventDefault();
-                saveMobileNo()
-            });
-        });
-    </script>
 @endsection
 
 @section('script')
-{{-- <script src="{{asset('public/sdpl-assets/user/js/slider.js')}}"></script> --}}
 <script src="{{ asset('assets/user/js/jquery.min.js') }}"></script>
   <script>
     $(document).ready(function () {
         
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $(document).on('click','#saveMobileBtn', function (e) {
+                
+            e.preventDefault();
+    
+            var mobile = $("#mobile").val();
+            var i_agree = $("#i_agree").val();
+
+            // var password = $("input[name=password]").val();
+            // var email = $("input[name=email]").val();
+    
+            $.ajax({
+                type:'POST',
+                url:'user-register',
+                data:{mobile:mobile, i_agree:i_agree},
+                success:function(data){
+                    alert(data);
+                }
+            });
+            
+            console.log(mobile);
+    
+        });
     });
   </script>
 
 @endsection
+

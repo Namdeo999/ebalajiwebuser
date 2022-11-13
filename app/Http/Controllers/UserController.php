@@ -20,6 +20,7 @@ class UserController extends Controller
         // }
         return view('/login');
     }
+
     public function userLogin(Request $req)
     {
         $mobile = $req->input('mobile');
@@ -46,4 +47,6 @@ class UserController extends Controller
 
         // return view('/login');
     }
+
+    
 }

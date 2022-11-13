@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
 
 
@@ -28,7 +29,8 @@ Route::get('/login', [UserController::class, 'index']);
 Route::post('/user-login', [UserController::class, 'userLogin']);
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
-Route::get('/register', [DashboardController::class, 'index2']);
+// Route::get('/user-register', [RegisterController::class, 'index']);
+Route::post('/user-register', [RegisterController::class, 'register']);
 
 Route::post('register/register', [UserController::class, 'saveMobileNo']);
 
