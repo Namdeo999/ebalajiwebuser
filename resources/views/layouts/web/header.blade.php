@@ -44,13 +44,17 @@
     
 <div class="navbar-area">
     <div class="mobile-nav">
-        <a href="index.html" class="logo"><img src="{{asset('public/assets/images/logo-1.png')}}" alt="Logo"></a>
+        <a href="index.html" class="logo">
+            <!-- <img src="{{asset('public/assets/images/AdminLTELogo.png')}}" alt="Logo"> -->
+            <h5>Ebalaji</h5>
+        </a>
     </div>
     <div class="main-nav">
         <div class="container-fluid">
             <div class="container-max">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('public/assets/images/logo-1.png')}}" alt="Logo"></a>
+                    <!-- <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('public/assets/images/logo-1.png')}}" alt="Logo"></a> -->
+                    <a class="navbar-brand" href="{{url('/')}}"><h5>Ebalaji</h5> </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">

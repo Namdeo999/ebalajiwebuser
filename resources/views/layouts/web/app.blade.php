@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="{{ asset('assets/web/css/bootstrap-icons.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/web/css/animate.min.css') }}">
 
-        {{-- <link rel="stylesheet" href="{{asset('public/assets/fonts/flaticon.css')}}"> --}}
-        {{-- <link rel="stylesheet" href="{{asset('public/assets/css/boxicons.min.css')}}"> --}}
+        <link rel="stylesheet" href="{{asset('public/assets/fonts/flaticon.css')}}">
+        <link rel="stylesheet" href="{{asset('public/assets/css/boxicons.min.css')}}">
 
         <link rel="stylesheet" href="{{ asset('assets/web/css/owl.carousel.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/web/css/owl.theme.default.min.css') }}">
