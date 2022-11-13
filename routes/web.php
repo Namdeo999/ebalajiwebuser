@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 
+
 Route::get('/', function () {
     return view('home');
 });
@@ -22,6 +23,9 @@ Route::get('/register', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/login', [UserController::class, 'index']);
+Route::post('/user-login', [UserController::class, 'userLogin']);
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/register', [DashboardController::class, 'index2']);

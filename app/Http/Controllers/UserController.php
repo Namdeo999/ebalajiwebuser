@@ -4,38 +4,46 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use App\Models\Mobile;
-use Validator;
 use App\MyApp;
+use GuzzleHttp\Client;
 
 class UserController extends Controller
 {
-    public function saveMobileNo(Request $req)
+    //
+    public function index(Request $req)
     {
-        $validator = Validator::make($req->all(),[
-            'mobile_no' => 'required|max:191',
-            'iagree' => 'required|max:191',
-            'email' => 'required|unique:admins,email,'.$req->input('email'),
-            'password' => 'required|max:191',
+        // if($req->session()->has('USER_LOGIN'))
+        // {
+        //     return redirect('user/dashboard');
+        // }else {
+        //     return view('/login');
+        // }
+        return view('/login');
+    }
+    public function userLogin(Request $req)
+    {
+        $mobile = $req->input('mobile');
+        $password = $req->input('password');
+
+        $url = config('app.api_url').'user-login';
+        $response = Http::withHeaders(['Content-Type' => 'application/json'])->post($url, [
+            'mobile' => $mobile,
+            'password' => $password,
         ]);
-        if($validator->fails())
-        {
-            return response()->json([
-                'status'=>400,
-                'errors'=>$validator->messages(),
-            ]);
-        }else{
-            $model = new Admin ;
-            $model->role = $req->input('role');
-            $model->name = strtolower($req->input('name'));
-            $model->email = strtolower($req->input('email'));
-            $model->password = Hash::make($req->input('password')); 
-            
-            if($model->save()){
-                return response()->json([
-                    'status'=>200,
-                ]);
-            }
-        }
+        
+        // $response = Http::post(MyApp::API_URL.'user-login', [
+        //     'mobile' => $mobile,
+        //     'password' => $password,
+        // ]);
+
+       
+        // $response = Http::post('http://localhost:1700/api/user-login', [
+        //     'mobile' => $mobile,
+        //     'password' => $password,
+        // ]);
+
+        return $response;
+
+        // return view('/login');
     }
 }
