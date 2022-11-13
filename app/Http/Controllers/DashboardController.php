@@ -29,7 +29,7 @@ class DashboardController extends Controller
 
         // return view('projects.apiwithkey', compact('responseBody'));
         // return view('content.dashboard.dashboards-analytics');   
-        return view('dashboard2', [
+        return view('register', [
             'countries'=>$countries['data']
         ]);   
     }

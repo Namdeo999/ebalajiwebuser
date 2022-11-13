@@ -60,15 +60,22 @@
                                     <div class="user-form">
                                         <div class="contact-form">
                                             <h2>Mobile Number</h2>
-                                            <form>
+                                            <form  id="mobileForm">
+                                            @csrf
                                                 <div class="row">
                                                     <div class="col-lg-12 ">
                                                         <div class="form-group">
-                                                            <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Enter mobile no.">
+                                                            <input name="mobile_no" id="mobile_no" type="text" class="form-control" required placeholder="Enter mobile no.">
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" type="checkbox" id="i_agree" name="i_agree">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                i agree
+                                                            </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 ">
-                                                        <button type="submit" class="default-btn btn-bg-two">Submit</button>
+                                                        <button type="submit" id="saveMobileBtn" class="default-btn btn-bg-two">Submit</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -123,8 +130,8 @@
                                             <form>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Services</option>
+                                                    <select class="form-select form-select-lg" aria-label="Default select example">
+                                                        <option selected disabled>Services</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
                                                         <option value="3">Three</option>
@@ -165,21 +172,21 @@
                                                         <input type="text" class="form-control" required data-error="Please enter your Username or Email" placeholder="Pin Code">
                                                     </div>
                                                 </div>
-                                                <div class="col-4">
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Country</option>
-                                                        <option value="1">India</option>
-                                                        <option value="2">Singapore</option>
+                                                <div class="col-4 mb-5">
+                                                    <select class="form-select form-select-lg" aria-label="Default select example">
+                                                        @foreach ($countries as $list)
+                                                            <option value="{{$list['_id']}}">{{ucfirst($list['country'])}}</option>
+                                                        @endforeach
                                                     </select>
                                                 </div>
-                                                <div class="col-4">
-                                                    <select class="form-select" aria-label="Default select example">
+                                                <div class="col-4 mb-5">
+                                                    <select class="form-select form-select-lg" aria-label="Default select example">
                                                         <option selected>State</option>
                                                         <option value="1">madhya pradesh</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-4">
-                                                    <select class="form-select" aria-label="Default select example">
+                                                <div class="col-4 mb-5">
+                                                    <select class="form-select form-select-lg" aria-label="Default select example">
                                                         <option selected>City</option>
                                                         <option value="1">Jabalpur</option>
                                                         <option value="2">Indore</option>
@@ -215,5 +222,14 @@
         </div>
     </div>
 </div>
+
+<script>
+        $(document).ready(function () {
+            $(document).on('click','#saveMobileBtn', function (e) {
+                e.preventDefault();
+                saveMobileNo()
+            });
+        });
+    </script>
 
 @endsection
