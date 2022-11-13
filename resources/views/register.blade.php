@@ -231,5 +231,15 @@
             });
         });
     </script>
+@endsection
+
+@section('script')
+{{-- <script src="{{asset('public/sdpl-assets/user/js/slider.js')}}"></script> --}}
+<script src="{{ asset('assets/user/js/jquery.min.js') }}"></script>
+  <script>
+    $(document).ready(function () {
+        
+    });
+  </script>
 
 @endsection
